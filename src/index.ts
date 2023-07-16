@@ -1,3 +1,4 @@
-import { getName } from "@/name";
+import "dotenv/config";
+import { startServer } from "./app";
 
-console.log(getName("Ankan"));
+startServer();
