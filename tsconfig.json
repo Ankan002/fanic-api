@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ES2023"],
+    "module": "ES2022",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "useUnknownInCatchVariables": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "noUnusedParameters": false,
+    "noImplicitAny": true,
+    "pretty": true,
+    "typeRoots": ["src/@types", "./node_modules/@types"],
+    "noEmit": false,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "ts-node": {
+    "compiler": "typescript",
+    "swc": true,
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["src/**/*", "./commitlint.config.ts", "./jest.config.ts"]
+}
